@@ -1,0 +1,42 @@
+/* About.css */
+
+.about-section {
+    padding: 60px 20px;
+    background-color:black;
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 1rem;
+    color:white;
+  }
+  
+  .about-image {
+    flex-shrink: 0;
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #00bcd4;
+  }
+  
