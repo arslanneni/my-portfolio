@@ -9,7 +9,7 @@ function About() {
         <div className="about-content">
           <div className="about-image">
             <img
-              src="/img/pfp2.jpeg"
+              src="/img/pfp3.jpeg"
               alt="Arslan Ali"
               className="profile-img"
             />

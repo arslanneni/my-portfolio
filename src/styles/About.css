@@ -39,7 +39,7 @@
 
 .profile-img {
   width: 220px;
-  height: 220px;
+  height: 250px;
   border-radius: 50%;
   border: 5px solid #00bcd4; /* Matching highlight color */
   object-fit: cover;
