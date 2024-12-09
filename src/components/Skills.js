@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../src/styles/Skills.css";
 
 function Skills() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const elements = document.querySelectorAll(".skills-category");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="skills" className="skills-section">
       <div className="container">

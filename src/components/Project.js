@@ -13,7 +13,7 @@ To enhance the development and usage experience, we integrated Swagger for API d
       techStack: ["NextJS", "NestJS", "JavaScript", "Bootstrap", "PostgreSQL"],
       link: "https://example.com",
       image: "/img/NCRM.png",
-      view: "NO", // Add your image path here
+      view: "NO",
     },
     {
       title: "Almari",
@@ -29,7 +29,7 @@ To enhance the development and usage experience, we integrated Swagger for API d
       ],
       link: "https://almari.vercel.app/Login",
       image: "/img/Almari.png",
-      view: "YES", // Add your image path here
+      view: "YES",
     },
     {
       title: "User Authentication App",
@@ -38,17 +38,24 @@ To enhance the development and usage experience, we integrated Swagger for API d
       techStack: ["NestJS", "JWT", "Argon2", "TypeScript", "PostgreSQL"],
       link: "https://github.com/arslanneni/user-authentication-nestjs",
       image: "/img/Authentication.jpg",
-      view: "YES", // Add your image path here
+      view: "YES",
     },
   ];
 
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="projects-section" data-aos="fade-up">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title" data-aos="zoom-in">
+          Projects
+        </h2>
         <div className="projects-grid">
           {projectList.map((project, index) => (
-            <div className="project-card" key={index}>
+            <div
+              className="project-card"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <img
                 src={project.image}
                 alt={project.title}

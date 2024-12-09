@@ -1,41 +1,30 @@
-/* App.css */
-
-html, body {
+/* General Reset */
+body {
   margin: 0;
-  padding: 0;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: black !important;  /* Ensure the background color is applied */
-  color: white;  /* Set text color to white for visibility */
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: black;
+/* Section Divider */
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #00bcd4, transparent);
+  margin: 40px 0;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-header {
-  flex-shrink: 0;
-}
-
+/* Ensure main content is spaced nicely */
 main {
-  flex: 1; /* Pushes the footer to the bottom */
+  padding: 20px;
 }
 
-footer {
-  flex-shrink: 0;
-  background-color: #f8f9fa;  /* Footer background color */
-  color: black;  /* Footer text color */
-  padding: 1rem 0;
-  text-align: center;
+/* Optional: Add smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
-hr {
-  border: 0; /* Remove default border style */
-  height: 2px; /* Set the thickness of the line */
-  background-color: white; /* Set the color to white */
-  margin: 2rem 0; /* Add some spacing above and below */
-}
-

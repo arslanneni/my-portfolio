@@ -1,44 +1,72 @@
 /* About.css */
 
 .about-section {
-    padding: 60px 20px;
-    background-color:black;
-    color: #333;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #007bff;
-  }
-  
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .about-text {
-    max-width: 600px;
-    line-height: 1.8;
-    font-size: 1rem;
-    color:white;
-  }
-  
-  .about-image {
-    flex-shrink: 0;
-  }
-  
-  .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #00bcd4;
-    object-fit: cover; /* Ensures the image fits and crops as needed */
+  padding: 80px 20px;
+  background-color: #121212; /* Dark background */
+  color: #fff; /* Light text for contrast */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Modern font */
 }
 
-  
+.section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00bcd4; /* Highlight color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text {
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: left; /* Align text to left */
+  color: #d3d3d3; /* Subtle gray for text */
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #00bcd4; /* Matching highlight color */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack elements on smaller screens */
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+}

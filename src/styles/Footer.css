@@ -1,102 +1,100 @@
 footer {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a; /* Match the overall dark theme */
-    color: #f5f5f5; /* Light color for better contrast */
-    padding: 40px 20px;
-  }
-  
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a; /* Dark theme */
+  color: #f5f5f5;
+  padding: 40px 20px;
+  position: relative;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Slightly below viewport */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+footer.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer h5 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00bcd4;
+  letter-spacing: 1px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #00bcd4;
+}
+
+footer .bg-dark {
+  background-color: #222 !important; /* Darker footer bottom */
+}
+
+footer i {
+  color: #f5f5f5;
+  font-size: 1.3rem;
+  transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+footer i:hover {
+  color: #00bcd4;
+  transform: scale(1.1); /* Slight scaling */
+}
+
+footer .social-links a {
+  margin-right: 15px;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #00bcd4;
+  transform: scale(1.1); /* Hover effect */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cccccc; /* Softer white for text */
+}
+
+footer .bg-dark.text-white {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-top: 1px solid #444; /* Subtle border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   footer h5 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #00bcd4; /* Bright cyan for headers */
-    letter-spacing: 1px;
-  }
-  
-  footer ul {
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  footer ul li {
-    margin-bottom: 10px;
-  }
-  
-  footer ul li a {
-    text-decoration: none;
-    color: #f5f5f5; /* Bright white for links on dark background */
     font-size: 1rem;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  footer ul li a:hover {
-    color: #00bcd4; /* Cyan on hover for better visibility */
-  }
-  
-  footer .text-dark {
-    text-decoration: none;
-    transition: color 0.3s;
-    color: #f5f5f5; /* Adjusted text color */
-  }
-  
-  footer .text-dark:hover {
-    color: #00bcd4; /* Hover effect to match links */
-  }
-  
-  footer .bg-dark {
-    background-color: #222 !important; /* Darker shade for footer bottom */
   }
 
-  footer i {
-    color: #f5f5f5; /* Default white color for icons */
-    font-size: 1.2rem; /* Adjust size as needed */
-    transition: color 0.3s ease-in-out, transform 0.3s ease;
+  footer ul li {
+    margin-bottom: 5px;
   }
-  
-  footer i:hover {
-    color: #00bcd4; /* Cyan color on hover for better visibility */
-    transform: scale(1.1); /* Slight scaling for a hover effect */
-  }
-  
+
   footer .social-links a {
-    margin-right: 15px;
-    color: #f5f5f5;
-    font-size: 1.2rem;
-    transition: color 0.3s ease-in-out, transform 0.3s ease;
+    font-size: 1rem;
   }
-  
-  footer .social-links a:hover {
-    color: #00bcd4; /* Cyan on hover */
-    transform: scale(1.1); /* Slight scaling for hover effect */
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #cccccc; /* Softer white for text content */
-  }
-  
-  footer .bg-dark.text-white {
-    padding: 10px 0;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    border-top: 1px solid #444; /* Subtle border for separation */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    footer h5 {
-      font-size: 1rem;
-    }
-  
-    footer ul li {
-      margin-bottom: 5px;
-    }
-  
-    footer .social-links a {
-      font-size: 1rem;
-    }
-  }
-  
+}
