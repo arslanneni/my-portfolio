@@ -3,13 +3,14 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    
   }
   body{
 background-color: black;
   }
   
   .navbar-brand i {
-    color: #007bff;
+    color: #00bcd4;
   }
   
   .nav-link {
@@ -17,16 +18,23 @@ background-color: black;
     margin: 0 10px;
     display: flex;
     align-items: center;
-    transition: color 0.3s ease;
+    color: #00bcd4; /* Initial link color */
+    transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .nav-link:hover {
-    color: #0056b3;
+    color: #ff4081; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
   }
   
   .nav-link i {
-    color: #007bff;
+    color: #00bcd4;
     margin-right: 5px;
     font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover i {
+    color: #ff4081; /* Icon color change on hover */
   }
   

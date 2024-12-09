@@ -8,8 +8,8 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <>
-      <Header />
       <main>
+        <Header />
         <About />
         <hr className="hr" />
         <Projects />

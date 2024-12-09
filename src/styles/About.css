@@ -38,5 +38,7 @@
     height: 200px;
     border-radius: 50%;
     border: 5px solid #00bcd4;
-  }
+    object-fit: cover; /* Ensures the image fits and crops as needed */
+}
+
   
