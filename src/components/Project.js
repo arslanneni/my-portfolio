@@ -32,12 +32,12 @@ To enhance the development and usage experience, we integrated Swagger for API d
       view: "YES",
     },
     {
-      title: "User Authentication App",
+      title: "Exitlag",
       description:
-        "A secure and scalable user authentication system built with NestJS. This application utilizes JSON Web Tokens (JWT) for authentication and authorization, ensuring that users' data and sessions are securely handled. The password hashing is done using Argon2, a state-of-the-art cryptographic hashing algorithm known for its resistance to brute-force attacks. Users can register, log in, and manage their sessions, all with top-tier security features. This app provides a robust foundation for building secure authentication for modern web applications.",
-      techStack: ["NestJS", "JWT", "Argon2", "TypeScript", "PostgreSQL"],
-      link: "https://github.com/arslanneni/user-authentication-nestjs",
-      image: "/img/Authentication.jpg",
+        "A comprehensive reporting and automation system developed for ExitLag to enhance operational efficiency and data transparency. The project includes the creation of two key reports: the ExitLag Audit Report, which provides detailed analysis of customer data and trends, and the ExitLag MRC Report, focused on accurate calculation and consolidation of subscription charges. Additionally, a monthly cron job was implemented to automate the extraction of active customer data, ensuring up-to-date and consistent records. This development leverages scalable and robust technology to streamline processes and deliver valuable insights for ExitLag's operations.",
+      techStack: ["PHP", "Oracle"],
+      link: "https://providers.exitlag.com/login",
+      image: "/img/Exitlag.png",
       view: "YES",
     },
   ];
